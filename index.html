@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻资讯</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        .news-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        
+        .news-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .news-header h1 {
+            color: #d32f2f;
+            margin-bottom: 10px;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+        
+        .news-content {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .main-news {
+            flex: 2;
+        }
+        
+        .sidebar {
+            flex: 1;
+        }
+        
+        .news-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        
+        .news-item h4 {
+            color: #d32f2f;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .news-images {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .news-images img {
+            width: 48%;
+            height: auto;
+            border-radius: 4px;
+        }
+        
+        .author-info {
+            font-size: 14px;
+            color: #777;
+        }
+        
+        .hot-news-item {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .hot-news-item img {
+            width: 100px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        
+        .hot-news-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            flex: 1;
+        }
+        
+        .hot-news-item a:hover {
+            color: #d32f2f;
+            text-decoration: underline;
+        }
+        
+        .sidebar h3 {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px;
+            margin-top: 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="news-container">
+        <div class="news-header">
+            <h1>今日新闻资讯</h1>
+            <p>最新热点新闻一览</p>
+        </div>
+        
+        <hr>
+        
+        <div class="news-content">
+            <div class="main-news">
+                <div class="news-item">
+                    <h4>科技创新推动经济发展新动能</h4>
+                    <div class="news-images">
+                        <img src="科技1.jpg" alt="科技图片1">
+                        <img src="科技2.jpg" alt="科技图片2">
+                    </div>
+                    <div class="author-info">
+                        作者：张科技 | 发布时间：2023-06-15 | 阅读量：1.2万
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <h4>城市绿化建设取得新进展</h4>
+                    <div class="news-images">
+                        <img src="绿化1.jpg" alt="绿化图片1">
+                        <img src="绿化2.jpg" alt="绿化图片2">
+                    </div>
+                    <div class="author-info">
+                        作者：李环保 | 发布时间：2023-06-14 | 阅读量：0.8万
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <h4>国际文化交流节即将开幕</h4>
+                    <div class="news-images">
+                        <img src="文化1.jpg" alt="文化图片1">
+                        <img src="文化2.jpg" alt="文化图片2">
+                    </div>
+                    <div class="author-info">
+                        作者：王文化 | 发布时间：2023-06-13 | 阅读量：1.5万
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <h3>相关热文推荐</h3>
+                
+                <div class="hot-news-item">
+                    <a href="#">人工智能技术在各行业的应用前景分析</a>
+                    <img src="AI.jpg" alt="AI图片">
+                </div>
+                
+                <div class="hot-news-item">
+                    <a href="#">新能源汽车市场迎来爆发式增长</a>
+                    <img src="汽车.jpg" alt="汽车图片">
+                </div>
+                
+                <div class="hot-news-item">
+                    <a href="#">全球气候变化对农业的影响及应对策略</a>
+                    <img src="气候.jpg" alt="气候图片">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
